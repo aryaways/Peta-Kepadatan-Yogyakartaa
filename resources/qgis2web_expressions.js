@@ -763,3 +763,17 @@ function fnc__specialcol_(values, context) {
 function fnc_project_color(values, context) {
     return false;
 };
+
+
+
+function exp_label_jogja_centeroids_3_eval_expression(context) {
+    // NAMOBJ || '\n' || join_Luas || '\n'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (((feature.get('NAMOBJ')  + '\n') + feature.get('join_Luas') ) + '\n');
+    } else {
+        return (((feature.get('NAMOBJ')  + '\n') + feature.get('join_Luas') ) + '\n');
+    }
+}
